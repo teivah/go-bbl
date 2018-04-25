@@ -23,6 +23,7 @@ func main() {
 	 */
 
 	p1 := point{1, 2} // First way
+	p1 = point{x: 1, y:2} // It is possible to precise the member name
 	fmt.Printf("%v\n", p1)
 
 	p2 := new(point) // Second way (pointer allocation)

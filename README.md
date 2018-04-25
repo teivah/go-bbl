@@ -9,3 +9,4 @@
 - [Pointers](main/pointers.go)
 - [Structures](main/structures.go)
 - [Arrays](main/arrays.go)
+- [Slices](main/slices.go)
