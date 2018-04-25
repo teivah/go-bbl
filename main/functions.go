@@ -26,11 +26,14 @@ func main() {
 	n2, positive := sum2(5, 7)
 	fmt.Printf("value=%v, is positive=%v\n", n2, positive)
 
+	n3, _ := sum2(5, 7) // Unused variable
+	fmt.Printf("%v\n", n3)
+
 	delegate(5, 7, sum)
 
-	var f func(int, int) int = sum
+	var f func(int, int) int = sum // Function assignment
 	delegate(5, 7, f)
 
-	f2 := sum
+	f2 := sum // Function assignment with type inference
 	delegate(5, 7, f2)
 }
