@@ -1,7 +1,27 @@
-# Concepts
-Go is not functional nor object
+# Overview
 
-# Index
+Released in 2012 by Google.
+
+## Simplicity
+
+Simple to learn and concise.
+
+Number of keywords:
+- C++: 109
+- Java: 50
+- C: 32
+- Go: 25
+
+A 100 line Protobuf file translated in Java: **10649 lines**.  In Go: **657 lines**.
+
+Statically 
+
+## Concurrency
+
+Design for **concurrency** (goroutines, channels).
+
+
+# Deep dive
 
 - [Hello world](main/helloworld.go)
 - [Variables](main/variables.go)
@@ -20,5 +40,6 @@ Go is not functional nor object
 - [Panic](main/panic.go)
 - [Goroutines](main/goroutines.go)
 - [Channels](main/channels.go)
+- [Tests](calculator/calculator_test.go)
 
 # Conclusion

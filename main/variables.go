@@ -17,7 +17,7 @@ func main() {
 	var v int32 = 7 // Var keyword
 	fmt.Printf("%v\n", v)
 
-	// A variable is strongly typed
+	// A variable is statically typed
 	x := 5
 	fmt.Printf("%v\n", x)
 	// x = "some string" is not going to work
