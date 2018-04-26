@@ -16,7 +16,7 @@ func main() {
 	For a CPU-bound & parallelizable operation, the optimal number of threads is ...?
 
 	C10k problem
-	Impacts: thread switching, TLAB size in Java etc.
+	Impacts: thread memory consumption, thread creation & thread switching, TLAB size in Java etc.
 
 	Benefits: lighter, faster to start, faster to switch
 	 */
