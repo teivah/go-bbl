@@ -10,3 +10,6 @@
 - [Structures](main/structures.go)
 - [Arrays](main/arrays.go)
 - [Slices](main/slices.go)
+- [Maps](main/maps.go)
+- [Methods](main/methods.go)
+- [Interfaces](main/interfaces.go)
