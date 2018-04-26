@@ -13,3 +13,5 @@
 - [Maps](main/maps.go)
 - [Methods](main/methods.go)
 - [Interfaces](main/interfaces.go)
+- [Errors](main/errors.go)
+- [Panic](main/panic.go)
