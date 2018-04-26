@@ -14,7 +14,7 @@ func main() {
 	Don't communicate by sharing memory, share memory by communicating
 	 */
 
-	c := make(chan int, 10) // Buffered channel, 10 maximum messages can be buffered before to block the sender
+	c := make(chan int, 10) // Buffered channel, 10 maximum messages can be buffered before to block the sender goroutine (not the thread)
 	go displayThruChannel(c)
 
 	c <- 5
