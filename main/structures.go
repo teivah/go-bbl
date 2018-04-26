@@ -3,6 +3,13 @@ package main
 import "fmt"
 
 type point struct {
+	// Visible only within the current package
+	x int
+	y int
+}
+
+type Point2 struct {
+	// Visible also outside the current package
 	x int
 	y int
 }
@@ -22,8 +29,8 @@ func main() {
 	Two ways to instantiate a structure
 	 */
 
-	p1 := point{1, 2} // First way
-	p1 = point{x: 1, y:2} // It is possible to precise the member name
+	p1 := point{1, 2}      // First way
+	p1 = point{x: 1, y: 2} // It is possible to precise the member name
 	fmt.Printf("%v\n", p1)
 
 	p2 := new(point) // Second way (pointer allocation)

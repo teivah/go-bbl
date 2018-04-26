@@ -9,14 +9,21 @@ func sum(a, b int) int {
 
 // Multiple results
 func sum2(a, b int) (int, bool) {
-	n := sum(a, b)
+	n := a + b
 
 	return n, n > 0
 }
 
 // Function first class support
-func delegate(a, b int, f func(int, int) int) int {
+func sum3(a, b int, f func(int, int) int) int {
 	return f(a, b)
+}
+
+// Returns a function
+func sum4() func(int, int) int {
+	return func(i1 int, i2 int) int {
+		return i1 + i2
+	}
 }
 
 func main() {
@@ -29,11 +36,14 @@ func main() {
 	n3, _ := sum2(5, 7) // Unused variable
 	fmt.Printf("%v\n", n3)
 
-	delegate(5, 7, sum)
+	sum3(5, 7, sum)
 
 	var f func(int, int) int = sum // Function assignment
-	delegate(5, 7, f)
+	sum3(5, 7, f)
 
-	f2 := sum // Function assignment with type inference
-	delegate(5, 7, f2)
+	f = sum // Function assignment with type inference
+	sum3(5, 7, f)
+
+	f2 := sum4()
+	f2(5, 7)
 }
