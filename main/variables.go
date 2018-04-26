@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var global int
+
 func main() {
 	n := 5 // First assignment
 	fmt.Printf("%v\n", n)
@@ -42,4 +44,7 @@ func main() {
 	// s = i // Not going to work
 	s = i.(string)
 	fmt.Printf("%v\n", s)
+
+	// Global variable
+	global = 7
 }

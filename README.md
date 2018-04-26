@@ -1,3 +1,6 @@
+# Concepts
+Go is not functional nor object
+
 # Index
 
 - [Hello world](main/helloworld.go)
@@ -15,3 +18,7 @@
 - [Interfaces](main/interfaces.go)
 - [Errors](main/errors.go)
 - [Panic](main/panic.go)
+- [Goroutines](main/goroutines.go)
+- [Channels](main/channels.go)
+
+# Conclusion
