@@ -12,8 +12,10 @@ func main() {
 
 	/*
 	A goroutine is a lightweight thread (not mapped on an OS thread but a soft thread)
+
 	The Go execution environment decides how many threads are required
 	1 thread -> * goroutines
+
 	For a CPU-bound & parallelizable operation, the optimal number of threads is ...?
 
 	C10k problem

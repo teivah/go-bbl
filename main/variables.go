@@ -5,24 +5,28 @@ import "fmt"
 var global int
 
 func main() {
-	n := 5 // First assignment
+	// First assignment
+	n := 5
 	fmt.Printf("%v\n", n)
 
-	n = 6 // Second assignment
+	// Second assignment
+	n = 6
 	fmt.Printf("%v\n", n)
 
-	a, b, c := true, "string", 0 // Multiple assignments
+	// Multiple assignments
+	a, b, c := true, "string", 0
 	fmt.Printf("%v %v %v\n", a, b, c)
 
-	var v int32 = 7 // Var keyword
+	// Var keyword, used to force the type (e.g. int16, int32 or int64)
+	var v int32 = 7
 	fmt.Printf("%v\n", v)
 
 	// A variable is statically typed
 	x := 5
 	fmt.Printf("%v\n", x)
-	// x = "some string" is not going to work
+	// x = "some string" // Compilation error
 
-	// No generics
+	// Any type
 	var i interface{}
 	i = 32
 	fmt.Printf("%v\n", i)
@@ -41,7 +45,7 @@ func main() {
 
 	// Casting
 	var s string
-	// s = i // Not going to work
+	// s = i // Compilation error
 	s = i.(string)
 	fmt.Printf("%v\n", s)
 

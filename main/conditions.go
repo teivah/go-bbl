@@ -14,7 +14,8 @@ func main() {
 		// ...
 	}
 
-	if b := foo(); b < 10 { // Short statement
+	// Short statement
+	if b := foo(); b < 10 {
 		// ...
 	}
 }

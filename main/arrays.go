@@ -22,7 +22,7 @@ func main() {
 
 	var c[3]int
 	fmt.Printf("%v\n", c)
-	// Impossible c = a // Compilation error
+	// c = a // Compilation error
 
 	/*
 	An array is not dynamic

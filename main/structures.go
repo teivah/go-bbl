@@ -3,6 +3,11 @@ package main
 import "fmt"
 import "bbl-golang/structures"
 
+type pointWithAltitude struct {
+	structures.Point
+	altitude float32
+}
+
 type a struct {
 	foo int
 	b   b
@@ -17,47 +22,43 @@ type c struct {
 	baz int
 }
 
-func functionUsingCopy(p structures.Point) {
+func byValue(p structures.Point) {
 	p.X = 10
-
-	fmt.Printf("x=%v, y=%v\n", p.X, p.Y)
 }
 
-func functionUsingPointer(p *structures.Point) {
-	fmt.Printf("x=%v, y=%v\n", p.X, p.Y)
-}
-
-type pointWithAltitude struct {
-	structures.Point
-	altitude float32
+func byReference(p *structures.Point) {
+	p.X = 10
 }
 
 func main() {
 	/*
+	A structure is a typed collection of field
+	*/
+
+	/*
 	Two ways to instantiate a structure
 	 */
 
-	p1 := structures.Point{1, 2}      // First way
-	p1 = structures.Point{X: 1, Y: 2} // It is possible to precise the member name
-	fmt.Printf("%v\n", p1)
+	// First way
+	structureInstance := structures.Point{1, 2}
+	structureInstance = structures.Point{X: 1, Y: 2} // Naming members
 
-	p2 := new(structures.Point) // Second way (Pointer allocation)
-	p2.X = 1
-	p2.Y = 2
-	fmt.Printf("%v\n", p2)
+	// Second way (Pointer allocation)
+	structurePointer := new(structures.Point)
+	structurePointer.X = 1
+	structurePointer.Y = 2
 
-	functionUsingCopy(p1)
-	functionUsingCopy(*p2)
+	// Passing by value
+	byValue(structureInstance)
+	byValue(*structurePointer)
 
-	/*
-	Copy benefits: immutability (passing by value)
-	 */
-
-	functionUsingPointer(p2)
-	functionUsingPointer(&p1)
+	// Passing by reference
+	byReference(structurePointer)
+	byReference(&structureInstance)
 
 	/*
-	Pointer benefits: performance (passing by reference)
+	Passing by value: immutability (copy)
+	Passing by reference: performance (pointer)
 	 */
 
 	/*

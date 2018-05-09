@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	array := [5]string{"a", "b", "c", "d", "e"}
-
 	var slice []string
 
 	/*
@@ -19,6 +18,7 @@ func main() {
 	slice = array[3:]         // 3:high
 	fmt.Printf("%v\n", slice) // d, e
 
+	// A slice is a pointer to an array
 	array[4] = "m"
 	fmt.Printf("array=%v, slice=%v\n", array, slice) // a, b, c, d, m and d, m
 
@@ -29,7 +29,7 @@ func main() {
 	Making a new slice, not from an existing array
 	 */
 
-	slice2 := make([]int, 5) // type, length, capacity (of the internal array)
+	slice2 := make([]int, 5) // type, length (and capacity)
 	fmt.Printf("%v\n", slice2)
 
 	slice3 := []int{1, 2, 3, 4, 5}

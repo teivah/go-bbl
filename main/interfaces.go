@@ -47,7 +47,8 @@ func main() {
 	fmt.Printf("%v\n", c)
 
 	/*
-	If it quacks like a duck and swims like a duck, then it's a duck
+	Go's philosophy:
+	if it quacks like a duck and swims like a duck, then it's a duck
 	 */
 
 	var s scalable // Define a scalable
@@ -60,5 +61,11 @@ func main() {
 
 	/*
 	Benefits: not tightly coupled to the implementation
+	 */
+
+	/*
+	Structure: a collection of field
+	Interface: a collection of methods
+	Clear segregation between state and behavior
 	 */
 }

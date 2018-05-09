@@ -32,8 +32,13 @@ func (c *customer) modifyName4(name string) { // Pointer receiver
 }
 
 func main() {
-	c := customer{"Teiva", "Harsanyi"}
+	c := customer{"Queen", "Elisabeth"}
 
+	/*
+	How to get a string concatenating the name and lastname?
+	 */
+
+	// Function
 	s := display1(c)
 	fmt.Printf("%v\n", s)
 
@@ -45,27 +50,24 @@ func main() {
 	A method is just a function with a receiver argument
 	 */
 
-	c = customer{"Teiva", "Harsanyi"}
+	c = customer{"Queen", "Elisabeth"}
 	modifyName1(c, "Bob")
-	fmt.Printf("%v\n", c)
+	fmt.Printf("Modify 1: %v\n", c)
 
-	c = customer{"Teiva", "Harsanyi"}
+	c = customer{"Queen", "Elisabeth"}
 	modifyName2(&c, "Bob")
-	fmt.Printf("%v\n", c)
+	fmt.Printf("Modify 2: %v\n", c)
 
-	c = customer{"Teiva", "Harsanyi"}
+	c = customer{"Queen", "Elisabeth"}
 	c.modifyName3("Bob")
-	fmt.Printf("%v\n", c)
+	fmt.Printf("Modify 3: %v\n", c)
 
-	c = customer{"Teiva", "Harsanyi"}
+	c = customer{"Queen", "Elisabeth"}
 	c.modifyName4("Bob")
-	fmt.Printf("%v\n", c)
+	fmt.Printf("Modify 4: %v\n", c)
 
 	/*
 	Value receiver: immutability, may be used in read-only methods
-	 */
-
-	/*
 	Pointer receiver: performance, to be used in update methods
 	 */
 }
