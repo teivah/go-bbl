@@ -14,7 +14,9 @@ Number of keywords:
 
 A 100 line Protobuf file translated in Java: **10649 lines**.  In Go: **657 lines**.
 
-Statically 
+Statically typed
+
+Statically linked libraries
 
 ## Concurrency
 
@@ -40,6 +42,6 @@ Design for **concurrency** (goroutines, channels).
 - [Panic](main/panic.go)
 - [Goroutines](main/goroutines.go)
 - [Channels](main/channels.go)
-- [Tests](calculator/calculator_test.go)
+- [Testing](calculator/calculator_test.go)
 
 # Conclusion
