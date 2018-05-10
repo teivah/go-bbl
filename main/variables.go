@@ -4,6 +4,8 @@ import "fmt"
 
 var global int
 
+const pi float32 = 3.1415
+
 func main() {
 	// First assignment
 	n := 5
@@ -51,4 +53,7 @@ func main() {
 
 	// Global variable
 	global = 7
+
+	// Constant
+	fmt.Printf("%v\n", pi)
 }
