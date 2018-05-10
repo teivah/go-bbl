@@ -17,3 +17,8 @@ func BenchmarkSum(b *testing.B) {
 		add(5, 7)
 	}
 }
+
+// go test -race .
+func TestRaceDetector(t *testing.T) {
+	race()
+}
