@@ -8,13 +8,12 @@ func main() {
 		sum += i
 	}
 
-	// While (complex form)
 	j := 0
-	for ; j<5; {
+	for ; j < 5; {
 		j++
 	}
 
-	// While (easy form)
+	// While
 	for sum < 30 {
 		sum += sum
 	}
