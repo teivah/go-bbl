@@ -22,3 +22,20 @@ func BenchmarkSum(b *testing.B) {
 func TestRaceDetector(t *testing.T) {
 	race()
 }
+
+/*
+CPU profiling:
+	go test -run=XXX -bench=. -cpuprofile=cpu.out
+	go tool pprof cpuprofile cpu.out
+
+Tracing:
+	go test -run=XXX -bench=. -trace=trace.out
+	go tool trace trace.out
+
+Etc.
+ */
+func Benchmark(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		// ...
+	}
+}

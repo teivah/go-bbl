@@ -2,7 +2,7 @@
 
 Released in 2012 by Google.
 
-## Simplicity
+[TIOBE May 2018 ranking](resources/tiobe_2018.png)
 
 Simple to learn and concise.
 
@@ -12,16 +12,9 @@ Number of keywords:
 - C: 32
 - Go: 25
 
-A 100 line Protobuf file translated in Java: **10649 lines**.  In Go: **657 lines**.
+Statically typed, statically linked libraries.
 
-Statically typed
-
-Statically linked libraries
-
-## Concurrency
-
-Design for **concurrency** (goroutines, channels).
-
+Designed for [concurrency & parallelism](concurrency1.md).
 
 # Deep dive
 
@@ -42,6 +35,6 @@ Design for **concurrency** (goroutines, channels).
 - [Panic](main/panic.go)
 - [Goroutines](main/goroutines.go)
 - [Channels](main/channels.go)
-- [Testing](calculator/calculator_test.go)
+- [Testing & Profiling](calculator/calculator_test.go)
 
 # Conclusion
