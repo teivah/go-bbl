@@ -1,11 +1,13 @@
-**Concurrency**: Programming as the composition of independently executing processes
+**Concurrency**: the composition of independently executing processes (structure)
 
-**Parallelism**: Programming as the simultaneous execution of (possibly related) computations
+**Parallelism**: the simultaneous execution of possibly related computations
 
 Exercice:
 
-![GitHub Logo](resources/s5.png) 
+![ex](resources/s5.png) 
 
-Go will offer primitives for processes communication (channels) and efficient parallelization (goroutines).
+Go offers primitives for processes communication (channels) and efficient parallelization (goroutines).
+
+Don't communicate by sharing memory, share memory by communicating.
 
 [Back](README.md)

@@ -1,22 +1,18 @@
-# Overview
+# Go Launch & Learn
+
+![ex](resources/logo.png)
+
+## Overview
 
 Released in 2012 by Google.
 
-[TIOBE May 2018 ranking](resources/tiobe_2018.png)
+Go is an attempt to **combine** the **ease** of programming of an interpreted, dynamically typed language with the **efficiency** and **safety** of a statically typed, compiled language.
 
-Simple to learn and concise.
+Simple to learn and concise (25 **keywords** only).
 
-Number of keywords:
-- C++: 109
-- Java: 50
-- C: 32
-- Go: 25
+Built for [concurrency and parallelism](concurrency1.md).
 
-Statically typed, statically linked libraries.
-
-Designed for [concurrency & parallelism](concurrency1.md).
-
-# Deep dive
+## Deep dive
 
 - [Hello world](main/helloworld.go)
 - [Variables](main/variables.go)
@@ -37,4 +33,6 @@ Designed for [concurrency & parallelism](concurrency1.md).
 - [Channels](main/channels.go)
 - [Testing & Profiling](calculator/calculator_test.go)
 
-# Conclusion
+## Conclusion
+
+Designed by Google to solve Google's problem.

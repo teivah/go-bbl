@@ -1,9 +1,9 @@
-**Concurrency**: Programming as the composition of independently executing processes
+**Concurrency**: the composition of independently executing processes (structure)
 
-**Parallelism**: Programming as the simultaneous execution of (possibly related) computations
+**Parallelism**: the simultaneous execution of possibly related computations
 
 Exercice:
 
-![GitHub Logo](resources/s4.png)
+![ex](resources/s4.png)
 
 [Next](concurrency5.md)
