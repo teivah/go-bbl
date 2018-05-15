@@ -40,11 +40,11 @@ func main() {
 
 	// Function assignment, the type is optional
 	var f func(int, int) int = sum
-	sum3(5, 7, f)
 
 	// Closure
+	rate := 5
 	f = func(i int, i2 int) int {
-		return i * i2
+		return i * i2 * rate
 	}
 	sum3(5, 7, f)
 

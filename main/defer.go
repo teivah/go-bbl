@@ -6,8 +6,9 @@ import (
 )
 
 func f1() {
-	defer fmt.Println("First call")
-	fmt.Println("Second call")
+	defer fmt.Println("A")
+	defer fmt.Println("B")
+	fmt.Println("C")
 }
 
 func f2() {
