@@ -15,14 +15,7 @@ func divide(a, b float64) (float64, error) {
 }
 
 func main() {
-	s, err := divide(1, 2)
-	if err != nil {
-		// Do something with the error
-		// return
-	}
-	fmt.Printf("%v\n", s)
-
-	s, err = divide(1, 0)
+	s, err := divide(1, 0)
 	if err != nil {
 		// Do something with the error
 		// return

@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+/* Interface */
+
 type scalable interface {
 	scale(float32)
 }
