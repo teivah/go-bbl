@@ -10,7 +10,6 @@ func main() {
 	fmt.Printf("Reference=%v, value=%v\n", &a, a)
 
 	/*
-	Btw, Go has a Garbage Collector!
-	No need to use malloc() or free()
-	 */
+   	Btw, Go has a Garbage Collector!
+	*/
 }

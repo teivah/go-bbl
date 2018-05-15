@@ -11,14 +11,10 @@ func main() {
 	 */
 
 	slice = array[0:5]
-	fmt.Printf("%v\n", slice)
+	slice = array[:]  // low:high
+	slice = array[3:] // 3:high
 
-	slice = array[:]          // low:high
-	fmt.Printf("%v\n", slice) // a, b, c, d,
-	slice = array[3:]         // 3:high
-	fmt.Printf("%v\n", slice) // d, e
-
-	// A slice is a pointer to an array
+	// A slice is a pointer to an array (plus a length and a capacity)
 	array[4] = "m"
 	fmt.Printf("array=%v, slice=%v\n", array, slice) // a, b, c, d, m and d, m
 
@@ -26,7 +22,7 @@ func main() {
 	fmt.Printf("%v\n", slice)  // d, m, x
 
 	/*
-	Making a new slice, not from an existing array
+	Creating a new slice
 	 */
 
 	slice2 := make([]int, 5) // type, length (and capacity)

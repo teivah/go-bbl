@@ -39,11 +39,10 @@ func main() {
 	Two ways to instantiate a structure
 	 */
 
-	// First way
-	structureInstance := structures.Point{1, 2}
-	structureInstance = structures.Point{X: 1, Y: 2} // Naming members
+	// First way (instance allocation)
+	structureInstance := structures.Point{X: 1, Y: 2}
 
-	// Second way (Pointer allocation)
+	// Second way (pointer allocation)
 	structurePointer := new(structures.Point)
 	structurePointer.X = 1
 	structurePointer.Y = 2
