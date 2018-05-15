@@ -32,7 +32,7 @@ Tracing:
 	go test -run=XXX -bench=. -trace=trace.out
 	go tool trace trace.out
 
-Etc.
+Memory profiling, network latency (Go 1.11) etc.
  */
 func Benchmark(b *testing.B) {
 	for i := 0; i < b.N; i++ {

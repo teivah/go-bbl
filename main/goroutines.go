@@ -1,14 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func display(s string) {
 	fmt.Printf("%v\n", s)
 }
 
 func main() {
-	display("hello")    // Current goroutine
-	go display("hello") // Starts a new goroutine
+	display("hello 1")    // Current goroutine
+	go display("hello 2") // Starts a new goroutine
+	time.Sleep(250 * time.Millisecond)
 
 	/*
 	A goroutine is a lightweight thread (not mapped on an OS thread but a soft thread)

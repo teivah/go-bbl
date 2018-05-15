@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func displayThroughChannel(c <-chan int) { // <- is optional, in this case it indicates we cannot send data through this channel
@@ -53,13 +54,14 @@ func main() {
 	Don't communicate by sharing memory, share memory by communicating
 	 */
 
-	c := make(chan int, 1024) // Buffered channel, 10 maximum messages can be buffered before to block the sender goroutine (not the thread)
+	c := make(chan int, 1024) // Buffered channel, 1024 maximum messages can be buffered before to block the sender goroutine (not the thread)
 	go displayThroughChannel(c)
 
 	c <- 5
 	c <- 7
 
 	close(c) // The best practice is to close a channel from the sender
+	time.Sleep(250 * time.Millisecond)
 
 	// c <- 8 // We can't send value to a closed channel, it will panic
 
@@ -79,6 +81,7 @@ func main() {
 	for v := range result {
 		fmt.Printf("%v\n", v)
 	}
+	time.Sleep(250 * time.Millisecond)
 
 	/*
 	Small benchmark on 100k elements:
