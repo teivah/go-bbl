@@ -1,4 +1,4 @@
-# Go Launch & Learn
+# Go Lunch & Learn
 
 ![ex](resources/logo.png)
 
